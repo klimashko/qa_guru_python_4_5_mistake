@@ -18,7 +18,8 @@ browser.element('[value="1986"]').click()
 #value="1986"
 browser.element('[class="react-datepicker__month-select"]').click()
 browser.element('[value="5"]').click()
-
+browser.element('[aria-label="Choose Sunday, June 15th, 1986"]').click()
+time.sleep(3)
 time.sleep(10)
 
 #browser.driver.execute_script('window.scrollBy(0, 500)')
