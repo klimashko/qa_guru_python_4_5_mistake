@@ -3,7 +3,8 @@ from selene import be, have
 import pytest
 import time
 
-#browser.config.hold_browser_open("true")
+def fill_check_reg_form(browser_management):
+
 browser.open('https://demoqa.com/automation-practice-form')
 browser.element('[id="firstName"]').should(be.blank).type('John')
 browser.element('[id="lastName"]').should(be.blank).type('Smith')
